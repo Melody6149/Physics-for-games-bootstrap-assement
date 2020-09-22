@@ -28,26 +28,28 @@ bool PhysicsSceneApp::startup() {
 
 	glm::vec2  gravity = glm::vec2(0.0f, 0.0f);
 
-	glm::vec2 initialPosition = glm::vec2(0.0f, 0.0f);
-	glm::vec2 finalPosition = glm::vec2(60.0f, 0.0f);
-	glm::vec2 initialvelocity = calculateVelocity(initialPosition, finalPosition, gravity.y, 5.0f);
+	glm::vec2 firstSpherePosition = glm::vec2(0.0f, 0.0f);
 
-	Plane* plane = new Plane(glm::vec2(0.0f, 1.0f), 0.0f);
+	m_physicsScene = new PhysicsScene();
+
+	createballs(firstSpherePosition, 15);
+
+	/*Plane* plane = new Plane(glm::vec2(0.0f, 1.0f), 0.0f);
 	Plane* plane2 = new Plane(glm::vec2(0.0f, 10.0f), 10.0f);
 	Sphere* ball = new Sphere(glm::vec2(0.0f,20.0f), glm::vec2(0.0f,000.0f), 1.0f, 5.0f, glm::vec4(3, 1, 0, 1));
-	Sphere* ball2 = new Sphere(glm::vec2(0.0f,40.0f), glm::vec2(0.0f,-80.0f), 1.0f, 5.0f, glm::vec4(3, 1, 0, 1));
+	Sphere* ball2 = new Sphere(glm::vec2(0.0f,40.0f), glm::vec2(0.0f,0.0f), 1.0f, 5.0f, glm::vec4(3, 1, 0, 1));*/
 
 	/*Sphere* ball = new Sphere(initialPosition, initialvelocity, 1.0f, 4.0f, glm::vec4(1, 0.0f, 0.0f, 1.0f));*/
 
-	m_physicsScene = new PhysicsScene();
+
 	m_physicsScene->setGravity(gravity);
 	m_physicsScene->setTimeStep(0.01f);
 
 
-	m_physicsScene->addActor(ball);
+	/*m_physicsScene->addActor(ball);
 	m_physicsScene->addActor(ball2);
 	m_physicsScene->addActor(plane);
-	m_physicsScene->addActor(plane2);
+	m_physicsScene->addActor(plane2);*/
 
 	return true;
 }
@@ -126,4 +128,32 @@ glm::vec2 PhysicsSceneApp::calculateVelocity(glm::vec2 initialPosition, glm::vec
 	initialVelocity.y = (finalPosition.y - initialPosition.y - (0.5f * gravity * (time * time)) / time);
 
 	return initialVelocity;
+}
+
+void PhysicsSceneApp::createballs(glm::vec2 firstballPosition,int limit)
+{
+	int ballsNeededForColumn = 1;
+	int ballsInColumn = 0;
+
+	glm::vec2 ballposition = firstballPosition;
+	glm::vec2 firstballincolumn = ballposition;
+	for (int i = 0; i < limit;)
+	{
+		if (ballsInColumn >= ballsNeededForColumn)
+		{
+			ballposition = glm::vec2(firstballincolumn.x + 7.0f, firstballincolumn.y + 2.5f);
+			ballsInColumn = 0;
+			ballsNeededForColumn++;
+			firstballincolumn = ballposition;
+		}
+		else
+		{
+			Sphere* ball = new Sphere(ballposition, glm::vec2(0.0f, 0.0f), 1.0f, 3.0f, glm::vec4(0.0f, 1.0f, 0.0f, 1.0f));
+			ballposition = glm::vec2(ballposition.x, ballposition.y - 7.0f);
+			m_physicsScene->addActor(ball);
+			ballsInColumn++;
+			i++;
+		}
+
+	}
 }

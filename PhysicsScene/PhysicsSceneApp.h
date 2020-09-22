@@ -20,6 +20,8 @@ public:
 
 	glm::vec2 calculateVelocity(glm::vec2 initialPosition, glm::vec2 finalPosition, float gravity, float time);
 
+	void createballs(glm::vec2 firstballPosition , int limit);
+
 protected:
 
 	aie::Renderer2D*	m_2dRenderer;
