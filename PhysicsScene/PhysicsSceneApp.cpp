@@ -29,27 +29,30 @@ bool PhysicsSceneApp::startup() {
 	glm::vec2  gravity = glm::vec2(0.0f, 0.0f);
 
 	glm::vec2 firstSpherePosition = glm::vec2(0.0f, 0.0f);
-
+	
+	Sphere* sphere = new Sphere(glm::vec2(-50.0f, 0.0f), glm::vec2(1000.0f, 0.0f), 1.0f, 3.0f, glm::vec4(1.0f, 0.0f, 0.0f, 1.0f));
+	
 	m_physicsScene = new PhysicsScene();
+	m_physicsScene->addActor(sphere);
 
-	createballs(firstSpherePosition, 15);
+	createballs(firstSpherePosition, 91);
 
-	/*Plane* plane = new Plane(glm::vec2(0.0f, 1.0f), 0.0f);
-	Plane* plane2 = new Plane(glm::vec2(0.0f, 10.0f), 10.0f);
-	Sphere* ball = new Sphere(glm::vec2(0.0f,20.0f), glm::vec2(0.0f,000.0f), 1.0f, 5.0f, glm::vec4(3, 1, 0, 1));
-	Sphere* ball2 = new Sphere(glm::vec2(0.0f,40.0f), glm::vec2(0.0f,0.0f), 1.0f, 5.0f, glm::vec4(3, 1, 0, 1));*/
-
-	/*Sphere* ball = new Sphere(initialPosition, initialvelocity, 1.0f, 4.0f, glm::vec4(1, 0.0f, 0.0f, 1.0f));*/
-
+	Plane* rightwall = new Plane(glm::vec2(40.0f, 0.0f), 99.0f);
+	Plane* leftwall = new Plane(glm::vec2(40.0f, 0.0f), -99.0f);
+	Plane* topwall =  new Plane(glm::vec2(0.0f, 1.0f) , 55.0f);
+	Plane* bottomwall =  new Plane(glm::vec2(0.0f, 1.0f) , -50.0f);
 
 	m_physicsScene->setGravity(gravity);
 	m_physicsScene->setTimeStep(0.01f);
 
 
 	/*m_physicsScene->addActor(ball);
-	m_physicsScene->addActor(ball2);
-	m_physicsScene->addActor(plane);
-	m_physicsScene->addActor(plane2);*/
+	m_physicsScene->addActor(ball2); */
+	m_physicsScene->addActor(rightwall);
+	m_physicsScene->addActor(leftwall);
+	m_physicsScene->addActor(topwall);
+	m_physicsScene->addActor(bottomwall);
+	//m_physicsScene->addActor(plane2);
 
 	return true;
 }
@@ -149,7 +152,7 @@ void PhysicsSceneApp::createballs(glm::vec2 firstballPosition,int limit)
 		else
 		{
 			Sphere* ball = new Sphere(ballposition, glm::vec2(0.0f, 0.0f), 1.0f, 3.0f, glm::vec4(0.0f, 1.0f, 0.0f, 1.0f));
-			ballposition = glm::vec2(ballposition.x, ballposition.y - 7.0f);
+			ballposition = glm::vec2(ballposition.x, ballposition.y - 6.5f);
 			m_physicsScene->addActor(ball);
 			ballsInColumn++;
 			i++;
