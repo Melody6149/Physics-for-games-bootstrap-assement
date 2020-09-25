@@ -1,0 +1,129 @@
+\hypertarget{class_physics_object}{}\doxysection{Physics\+Object Class Reference}
+\label{class_physics_object}\index{PhysicsObject@{PhysicsObject}}
+
+
+This class is a virtual class used by the rigidbody class.  
+
+
+
+
+{\ttfamily \#include $<$Physics\+Object.\+h$>$}
+
+
+
+Inherited by \mbox{\hyperlink{class_plane}{Plane}}, and \mbox{\hyperlink{class_rigid_body}{Rigid\+Body}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_physics_object_a58ea286456823d7c7dfc1221701d16f8}{fixed\+Update}} (glm\+::vec2 gravity, float time\+Step)=0
+\begin{DoxyCompactList}\small\item\em used to update each object using timestep \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_physics_object_a7f960a2ede3b07394d5dc4a5beca0f4f}{debug}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_physics_object_ac1cbc181f7d9bd0a51338c164d822171}{make\+Gizmo}} ()=0
+\begin{DoxyCompactList}\small\item\em used to make each object \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_physics_object_ae80a0c4668a1bd03b54587235e6274e0}{reset\+Position}} ()
+\item 
+\mbox{\hyperlink{_physics_object_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\+Type}} \mbox{\hyperlink{class_physics_object_a2e27efd93552e7264707da6704710f92}{get\+Shape\+ID}} ()
+\begin{DoxyCompactList}\small\item\em returns shape id \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_physics_object_a1f46d4b98bd4d50eb5f7e63c43643cbf}{Physics\+Object}} (\mbox{\hyperlink{_physics_object_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\+Type}} a\+\_\+shape\+ID)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_physics_object_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\+Type}} \mbox{\hyperlink{class_physics_object_a0061ff867e112ae0250888fb89bcedcf}{m\+\_\+shape\+ID}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is a virtual class used by the rigidbody class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_physics_object_a1f46d4b98bd4d50eb5f7e63c43643cbf}\label{class_physics_object_a1f46d4b98bd4d50eb5f7e63c43643cbf}} 
+\index{PhysicsObject@{PhysicsObject}!PhysicsObject@{PhysicsObject}}
+\index{PhysicsObject@{PhysicsObject}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{PhysicsObject()}{PhysicsObject()}}
+{\footnotesize\ttfamily Physics\+Object\+::\+Physics\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_physics_object_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\+Type}}}]{a\+\_\+shape\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Constructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_physics_object_a7f960a2ede3b07394d5dc4a5beca0f4f}\label{class_physics_object_a7f960a2ede3b07394d5dc4a5beca0f4f}} 
+\index{PhysicsObject@{PhysicsObject}!debug@{debug}}
+\index{debug@{debug}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily virtual void Physics\+Object\+::debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_plane_a86ce7f8d034c0958e6632dfe8b05cd26}{Plane}}, and \mbox{\hyperlink{class_rigid_body_a2746e7f16edaf4db71850846d0d9ff6b}{Rigid\+Body}}.
+
+\mbox{\Hypertarget{class_physics_object_a58ea286456823d7c7dfc1221701d16f8}\label{class_physics_object_a58ea286456823d7c7dfc1221701d16f8}} 
+\index{PhysicsObject@{PhysicsObject}!fixedUpdate@{fixedUpdate}}
+\index{fixedUpdate@{fixedUpdate}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{fixedUpdate()}{fixedUpdate()}}
+{\footnotesize\ttfamily virtual void Physics\+Object\+::fixed\+Update (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{gravity,  }\item[{float}]{time\+Step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+used to update each object using timestep 
+
+
+
+Implemented in \mbox{\hyperlink{class_plane_a5c182dc7bd835996cbaa1eec476e3b7d}{Plane}}, and \mbox{\hyperlink{class_rigid_body_a81f9bd84c83fa9f949202bd81777232b}{Rigid\+Body}}.
+
+\mbox{\Hypertarget{class_physics_object_a2e27efd93552e7264707da6704710f92}\label{class_physics_object_a2e27efd93552e7264707da6704710f92}} 
+\index{PhysicsObject@{PhysicsObject}!getShapeID@{getShapeID}}
+\index{getShapeID@{getShapeID}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{getShapeID()}{getShapeID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_physics_object_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\+Type}} Physics\+Object\+::get\+Shape\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns shape id 
+
+\mbox{\Hypertarget{class_physics_object_ac1cbc181f7d9bd0a51338c164d822171}\label{class_physics_object_ac1cbc181f7d9bd0a51338c164d822171}} 
+\index{PhysicsObject@{PhysicsObject}!makeGizmo@{makeGizmo}}
+\index{makeGizmo@{makeGizmo}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{makeGizmo()}{makeGizmo()}}
+{\footnotesize\ttfamily virtual void Physics\+Object\+::make\+Gizmo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+used to make each object 
+
+
+
+Implemented in \mbox{\hyperlink{class_plane_aa3fa5eb66f02f2b37609f7bcfca6964f}{Plane}}, and \mbox{\hyperlink{class_sphere_a72c80a8576b0a54513479f51570dabeb}{Sphere}}.
+
+\mbox{\Hypertarget{class_physics_object_ae80a0c4668a1bd03b54587235e6274e0}\label{class_physics_object_ae80a0c4668a1bd03b54587235e6274e0}} 
+\index{PhysicsObject@{PhysicsObject}!resetPosition@{resetPosition}}
+\index{resetPosition@{resetPosition}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{resetPosition()}{resetPosition()}}
+{\footnotesize\ttfamily virtual void Physics\+Object\+::reset\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_plane_aba7b46138ec6a9c9c802086628ff4552}{Plane}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_physics_object_a0061ff867e112ae0250888fb89bcedcf}\label{class_physics_object_a0061ff867e112ae0250888fb89bcedcf}} 
+\index{PhysicsObject@{PhysicsObject}!m\_shapeID@{m\_shapeID}}
+\index{m\_shapeID@{m\_shapeID}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{m\_shapeID}{m\_shapeID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_physics_object_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\+Type}} Physics\+Object\+::m\+\_\+shape\+ID\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Physics\+Scene/\mbox{\hyperlink{_physics_object_8h}{Physics\+Object.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\hypertarget{class_sphere}{}\doxysection{Sphere Class Reference}
+\label{class_sphere}\index{Sphere@{Sphere}}
+
+
+{\ttfamily \#include $<$Sphere.\+h$>$}
+
+
+
+Inherits \mbox{\hyperlink{class_rigid_body}{Rigid\+Body}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sphere_a67a9835d0bef74da2c8c3df69d79596d}{Sphere}} (glm\+::vec2 position, glm\+::vec2 velocity, float mass, float radius, glm\+::vec4 colour)
+\item 
+\mbox{\hyperlink{class_sphere_a569c071e50a3e11f678630ee1a17737e}{$\sim$\+Sphere}} ()
+\item 
+virtual void \mbox{\hyperlink{class_sphere_a72c80a8576b0a54513479f51570dabeb}{make\+Gizmo}} ()
+\begin{DoxyCompactList}\small\item\em used to make each object \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_sphere_a03b2b9c2c71cf51dc4fcfc4fc2978122}{check\+Collision}} (\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$other)
+\item 
+float \mbox{\hyperlink{class_sphere_a330dd34c7c7b6dfff106c4c71ec80028}{get\+Radius}} ()
+\item 
+glm\+::vec4 \mbox{\hyperlink{class_sphere_a3b50ac5fc94a9aaea99b93ea8f2961d8}{get\+Colour}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_sphere_a1faee6c9b6e62abf0d35cc87a1894b61}{m\+\_\+radius}}
+\item 
+glm\+::vec4 \mbox{\hyperlink{class_sphere_aca3c6c348856bfe747dbc47eb0cc797a}{m\+\_\+colour}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sphere_a67a9835d0bef74da2c8c3df69d79596d}\label{class_sphere_a67a9835d0bef74da2c8c3df69d79596d}} 
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\index{Sphere@{Sphere}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{Sphere()}{Sphere()}}
+{\footnotesize\ttfamily Sphere\+::\+Sphere (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{position,  }\item[{glm\+::vec2}]{velocity,  }\item[{float}]{mass,  }\item[{float}]{radius,  }\item[{glm\+::vec4}]{colour }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sphere_a569c071e50a3e11f678630ee1a17737e}\label{class_sphere_a569c071e50a3e11f678630ee1a17737e}} 
+\index{Sphere@{Sphere}!````~Sphere@{$\sim$Sphere}}
+\index{````~Sphere@{$\sim$Sphere}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{$\sim$Sphere()}{~Sphere()}}
+{\footnotesize\ttfamily Sphere\+::$\sim$\+Sphere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sphere_a03b2b9c2c71cf51dc4fcfc4fc2978122}\label{class_sphere_a03b2b9c2c71cf51dc4fcfc4fc2978122}} 
+\index{Sphere@{Sphere}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily bool Sphere\+::check\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_rigid_body_a138102b728bb6556c8cb48b0df91e75f}{Rigid\+Body}}.
+
+\mbox{\Hypertarget{class_sphere_a3b50ac5fc94a9aaea99b93ea8f2961d8}\label{class_sphere_a3b50ac5fc94a9aaea99b93ea8f2961d8}} 
+\index{Sphere@{Sphere}!getColour@{getColour}}
+\index{getColour@{getColour}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{getColour()}{getColour()}}
+{\footnotesize\ttfamily glm\+::vec4 Sphere\+::get\+Colour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sphere_a330dd34c7c7b6dfff106c4c71ec80028}\label{class_sphere_a330dd34c7c7b6dfff106c4c71ec80028}} 
+\index{Sphere@{Sphere}!getRadius@{getRadius}}
+\index{getRadius@{getRadius}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{getRadius()}{getRadius()}}
+{\footnotesize\ttfamily float Sphere\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_sphere_a72c80a8576b0a54513479f51570dabeb}\label{class_sphere_a72c80a8576b0a54513479f51570dabeb}} 
+\index{Sphere@{Sphere}!makeGizmo@{makeGizmo}}
+\index{makeGizmo@{makeGizmo}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{makeGizmo()}{makeGizmo()}}
+{\footnotesize\ttfamily void Sphere\+::make\+Gizmo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+used to make each object 
+
+
+
+Implements \mbox{\hyperlink{class_physics_object_ac1cbc181f7d9bd0a51338c164d822171}{Physics\+Object}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sphere_aca3c6c348856bfe747dbc47eb0cc797a}\label{class_sphere_aca3c6c348856bfe747dbc47eb0cc797a}} 
+\index{Sphere@{Sphere}!m\_colour@{m\_colour}}
+\index{m\_colour@{m\_colour}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{m\_colour}{m\_colour}}
+{\footnotesize\ttfamily glm\+::vec4 Sphere\+::m\+\_\+colour\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_sphere_a1faee6c9b6e62abf0d35cc87a1894b61}\label{class_sphere_a1faee6c9b6e62abf0d35cc87a1894b61}} 
+\index{Sphere@{Sphere}!m\_radius@{m\_radius}}
+\index{m\_radius@{m\_radius}!Sphere@{Sphere}}
+\doxysubsubsection{\texorpdfstring{m\_radius}{m\_radius}}
+{\footnotesize\ttfamily float Sphere\+::m\+\_\+radius\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Physics\+Scene/\mbox{\hyperlink{_sphere_8h}{Sphere.\+h}}\item 
+Physics\+Scene/\mbox{\hyperlink{_sphere_8cpp}{Sphere.\+cpp}}\end{DoxyCompactItemize}

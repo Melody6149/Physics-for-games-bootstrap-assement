@@ -1,0 +1,119 @@
+\hypertarget{gtc_2quaternion_8inl}{}\doxysection{dependencies/glm/glm/gtc/quaternion.inl File Reference}
+\label{gtc_2quaternion_8inl}\index{dependencies/glm/glm/gtc/quaternion.inl@{dependencies/glm/glm/gtc/quaternion.inl}}
+{\ttfamily \#include \char`\"{}../trigonometric.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../geometric.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../exponential.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../detail/compute\+\_\+vector\+\_\+relational.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}epsilon.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structglm_1_1detail_1_1compute__dot_3_01tquat_3_01_t_00_01_p_01_4_00_01_t_00_01_aligned_01_4}{glm\+::detail\+::compute\+\_\+dot$<$ tquat$<$ T, P $>$, T, Aligned $>$}}
+\item 
+struct \mbox{\hyperlink{structglm_1_1detail_1_1compute__quat__add}{glm\+::detail\+::compute\+\_\+quat\+\_\+add$<$ T, P, Aligned $>$}}
+\item 
+struct \mbox{\hyperlink{structglm_1_1detail_1_1compute__quat__sub}{glm\+::detail\+::compute\+\_\+quat\+\_\+sub$<$ T, P, Aligned $>$}}
+\item 
+struct \mbox{\hyperlink{structglm_1_1detail_1_1compute__quat__mul__scalar}{glm\+::detail\+::compute\+\_\+quat\+\_\+mul\+\_\+scalar$<$ T, P, Aligned $>$}}
+\item 
+struct \mbox{\hyperlink{structglm_1_1detail_1_1compute__quat__div__scalar}{glm\+::detail\+::compute\+\_\+quat\+\_\+div\+\_\+scalar$<$ T, P, Aligned $>$}}
+\item 
+struct \mbox{\hyperlink{structglm_1_1detail_1_1compute__quat__mul__vec4}{glm\+::detail\+::compute\+\_\+quat\+\_\+mul\+\_\+vec4$<$ T, P, Aligned $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceglm}{glm}}
+\item 
+ \mbox{\hyperlink{namespaceglm_1_1detail}{glm\+::detail}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_gab1ace864fbf189ffa368950001808a3c}{glm\+::conjugate}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga5f47300c024c2d809944e6ac661d6d14}{glm\+::inverse}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga6443d80d8429baec64193d0e31e580c8}{glm\+::operator+}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga76d2d3e18c09dbd336ba90b498fefbba}{glm\+::operator-\/}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga517657374d8ca180d63c33ff9430518a}{glm\+::operator+}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}}, tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_gabca7455f687e322b505531e15786d845}{glm\+::operator$\ast$}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}}, tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_aa5367c14d90f462230c2611b81b41d23}{p}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} \mbox{\hyperlink{structvec}{vec}}$<$ 3, T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga809b1d2a87ed16b2fc490b957c6f7e7f}{glm\+::operator$\ast$}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}}, \mbox{\hyperlink{structvec}{vec}}$<$ 3, T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} \mbox{\hyperlink{structvec}{vec}}$<$ 3, T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_gaef9b801506b5f3015fcf6d7f6cc7b2af}{glm\+::operator$\ast$}} (\mbox{\hyperlink{structvec}{vec}}$<$ 3, T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a10a82eabcb59d2fcd74acee063775f90}{v}}, tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} \mbox{\hyperlink{structvec}{vec}}$<$ 4, T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga1c61fae4d93d9d074d112878d60df2be}{glm\+::operator$\ast$}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}}, \mbox{\hyperlink{structvec}{vec}}$<$ 4, T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} \mbox{\hyperlink{structvec}{vec}}$<$ 4, T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga8b4f1c6df7c224c7d4fcc30194db6599}{glm\+::operator$\ast$}} (\mbox{\hyperlink{structvec}{vec}}$<$ 4, T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a10a82eabcb59d2fcd74acee063775f90}{v}}, tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga64f3ff448c382fd6642eafddd6ff65ea}{glm\+::operator$\ast$}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}}, T const \&\mbox{\hyperlink{glext_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga8b18b7e92f80b6b26550a1035bca33ba}{glm\+::operator$\ast$}} (T const \&\mbox{\hyperlink{glext_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}}, tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_gab52fd3ac627908aa2aa1df96ddcdd113}{glm\+::operator/}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}}, T const \&\mbox{\hyperlink{glext_8h_a4af680a6c683f88ed67b76f207f2e6e4}{s}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} bool \mbox{\hyperlink{group__gtc__quaternion_ga7070e4e3cfdac395b3392219a365d95b}{glm\+::operator==}} (tquat$<$ T, P $>$ const \&q1, tquat$<$ T, P $>$ const \&q2)
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} bool \mbox{\hyperlink{group__gtc__quaternion_gacbe1e859eb6558097bac5ec45955c60a}{glm\+::operator!=}} (tquat$<$ T, P $>$ const \&q1, tquat$<$ T, P $>$ const \&q2)
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} T \mbox{\hyperlink{group__gtc__quaternion_gac682181783027544c8d251b4d3a60cf8}{glm\+::length}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga35b6bcb22ac6d1e4a85440f5b69bdf86}{glm\+::normalize}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{namespaceglm_ae21800a9767f21b7649c196485d924b4}{glm\+::cross}} (tquat$<$ T, P $>$ const \&q1, tquat$<$ T, P $>$ const \&q2)
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga31cc82178742c36450f5662bd4fb30b0}{glm\+::mix}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a1af10666aa42292f407f6acc2af11948}{x}}, tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_af2e2675ea2e0b9a7ec6a98fcb44a938a}{y}}, T \mbox{\hyperlink{glcorearb_8h_a3309789fc188587d666cda5ece79cf82}{a}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga5692804fa4db9e762a1c19b607e54435}{glm\+::lerp}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a1af10666aa42292f407f6acc2af11948}{x}}, tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_af2e2675ea2e0b9a7ec6a98fcb44a938a}{y}}, T \mbox{\hyperlink{glcorearb_8h_a3309789fc188587d666cda5ece79cf82}{a}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga22b438c7252f3fa5b773c9882471652a}{glm\+::slerp}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a1af10666aa42292f407f6acc2af11948}{x}}, tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_af2e2675ea2e0b9a7ec6a98fcb44a938a}{y}}, T \mbox{\hyperlink{glcorearb_8h_a3309789fc188587d666cda5ece79cf82}{a}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga6e6822072246ec0c805873a968b1a1e2}{glm\+::rotate}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}}, T const \&\mbox{\hyperlink{glext_8h_a9e06c1f76a20fed54ca742cd25cb02c4}{angle}}, \mbox{\hyperlink{structvec}{vec}}$<$ 3, T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} \mbox{\hyperlink{structvec}{vec}}$<$ 3, T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_gac4b0e197d14c7faec9d6640d0f8efc16}{glm\+::euler\+Angles}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a1af10666aa42292f407f6acc2af11948}{x}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} T \mbox{\hyperlink{group__gtc__quaternion_ga4fd705376c6c1fd667be0055a0ea58ec}{glm\+::roll}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} T \mbox{\hyperlink{group__gtc__quaternion_ga2c08b93a4261c10748fd4d2104346f17}{glm\+::pitch}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} T \mbox{\hyperlink{group__gtc__quaternion_ga724a5df282b70cec0a6cb0d6dcddb6d6}{glm\+::yaw}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} mat$<$ 3, 3, T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga903647421102a0ce39f06d10e4b14d3c}{glm\+::mat3\+\_\+cast}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} mat$<$ 4, 4, T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga2aab716151de566a3f6ec3bad49f3964}{glm\+::mat4\+\_\+cast}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga61f11ea26c2e7f2bb5e8bd3019c3f739}{glm\+::quat\+\_\+cast}} (mat$<$ 3, 3, T, P $>$ const \&\mbox{\hyperlink{glext_8h_af593500c283bf1a787a6f947f503a5c2}{m}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_gaca51f7c22c4a76b9d4104ad862da15ce}{glm\+::quat\+\_\+cast}} (mat$<$ 4, 4, T, P $>$ const \&m4)
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} T \mbox{\hyperlink{group__gtc__quaternion_gad4a4448baedb198b2b1e7880d2544dc9}{glm\+::angle}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a1af10666aa42292f407f6acc2af11948}{x}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} \mbox{\hyperlink{structvec}{vec}}$<$ 3, T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga30f9cab44cd6038900b8e021e8f6b935}{glm\+::axis}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a1af10666aa42292f407f6acc2af11948}{x}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} tquat$<$ T, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga513e3fb694837e1f40352cb5873828f8}{glm\+::angle\+Axis}} (T const \&\mbox{\hyperlink{glext_8h_a9e06c1f76a20fed54ca742cd25cb02c4}{angle}}, \mbox{\hyperlink{structvec}{vec}}$<$ 3, T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a10a82eabcb59d2fcd74acee063775f90}{v}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} \mbox{\hyperlink{structvec}{vec}}$<$ 4, bool, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga2cdaac7278237a6ca46355abb7ef03ce}{glm\+::less\+Than}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a1af10666aa42292f407f6acc2af11948}{x}}, tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_af2e2675ea2e0b9a7ec6a98fcb44a938a}{y}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} \mbox{\hyperlink{structvec}{vec}}$<$ 4, bool, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga2cc86c3780498566589a5c915b660d49}{glm\+::less\+Than\+Equal}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a1af10666aa42292f407f6acc2af11948}{x}}, tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_af2e2675ea2e0b9a7ec6a98fcb44a938a}{y}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} \mbox{\hyperlink{structvec}{vec}}$<$ 4, bool, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga50a059de28c47e7dccb7019b4d37fb73}{glm\+::greater\+Than}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a1af10666aa42292f407f6acc2af11948}{x}}, tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_af2e2675ea2e0b9a7ec6a98fcb44a938a}{y}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} \mbox{\hyperlink{structvec}{vec}}$<$ 4, bool, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga76fa0d99965764a16b8fe8d34f60cfa1}{glm\+::greater\+Than\+Equal}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a1af10666aa42292f407f6acc2af11948}{x}}, tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_af2e2675ea2e0b9a7ec6a98fcb44a938a}{y}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} \mbox{\hyperlink{structvec}{vec}}$<$ 4, bool, P $>$ \mbox{\hyperlink{group__gtc__quaternion_gac1fcd8c68742992fd59310203423c023}{glm\+::equal}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a1af10666aa42292f407f6acc2af11948}{x}}, tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_af2e2675ea2e0b9a7ec6a98fcb44a938a}{y}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} \mbox{\hyperlink{structvec}{vec}}$<$ 4, bool, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga9bfd0663b62132254f9cb1c2672f5bbf}{glm\+::not\+Equal}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_a1af10666aa42292f407f6acc2af11948}{x}}, tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glcorearb_8h_af2e2675ea2e0b9a7ec6a98fcb44a938a}{y}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} \mbox{\hyperlink{structvec}{vec}}$<$ 4, bool, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga299e93c52ef2509965f7999cd0196e7a}{glm\+::isnan}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}})
+\item 
+{\footnotesize template$<$typename T , precision P$>$ }\\\mbox{\hyperlink{setup_8hpp_a33fdea6f91c5f834105f7415e2a64407}{G\+L\+M\+\_\+\+F\+U\+N\+C\+\_\+\+Q\+U\+A\+L\+I\+F\+I\+ER}} \mbox{\hyperlink{structvec}{vec}}$<$ 4, bool, P $>$ \mbox{\hyperlink{group__gtc__quaternion_ga88474bed7bdbedfe1b226a4c50ee39e5}{glm\+::isinf}} (tquat$<$ T, P $>$ const \&\mbox{\hyperlink{glext_8h_a8fc1e7b9baaae687804c7eed46ca09c6}{q}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{group__gtc__quaternion}{G\+L\+M\+\_\+\+G\+T\+C\+\_\+quaternion}} 

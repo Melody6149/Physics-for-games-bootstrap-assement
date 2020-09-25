@@ -1,0 +1,182 @@
+\hypertarget{class_physics_scene}{}\doxysection{Physics\+Scene Class Reference}
+\label{class_physics_scene}\index{PhysicsScene@{PhysicsScene}}
+
+
+{\ttfamily \#include $<$Physics\+Scene.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_physics_scene_a815f1460e822c52d27cdbb1c79b7d38d}{Physics\+Scene}} ()
+\item 
+\mbox{\hyperlink{class_physics_scene_ab51b08cdb9a551134f9a347e59709724}{$\sim$\+Physics\+Scene}} ()
+\item 
+void \mbox{\hyperlink{class_physics_scene_af6d6286c3b0ae22f0d219eb4bdd46149}{add\+Actor}} (\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$actor)
+\item 
+void \mbox{\hyperlink{class_physics_scene_a696fef09a3849c91e7d2c6e3fbd2e56e}{remove\+Actor}} (\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$actor)
+\item 
+void \mbox{\hyperlink{class_physics_scene_a8da923a616636278a069fd4cefc76647}{update}} (float delta\+Time)
+\item 
+void \mbox{\hyperlink{class_physics_scene_a4982d433d360c115fcf46269b3c5b950}{check\+For\+Collision}} ()
+\item 
+void \mbox{\hyperlink{class_physics_scene_a37d84d276838156a03efbddaea0f676b}{update\+Gizmos}} ()
+\item 
+void \mbox{\hyperlink{class_physics_scene_a394f030782f5c2fcf7aaf8ed5b0a144f}{debug\+Scene}} ()
+\item 
+void \mbox{\hyperlink{class_physics_scene_a5c922d761eec1611f8986eead9c4251e}{set\+Gravity}} (const glm\+::vec2 gravity)
+\item 
+glm\+::vec2 \mbox{\hyperlink{class_physics_scene_a56d1377b7543080f6ccb85ec92321cd0}{get\+Gravity}} () const
+\item 
+void \mbox{\hyperlink{class_physics_scene_a1a83d1c8b1ae1ace048b0a03a3807947}{set\+Time\+Step}} (const float time\+Step)
+\item 
+float \mbox{\hyperlink{class_physics_scene_aee0881293a2ae41305f56fac50619c5c}{get\+Time\+Step}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_physics_scene_af166ceecf7905a8b1648851fd60f109c}{plane\+To\+Plane}} (\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$object1, \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$object2)
+\item 
+static bool \mbox{\hyperlink{class_physics_scene_af8de3a9ec46aa83c7500a56b462ec4b3}{plane\+To\+Sphere}} (\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$object1, \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$object2)
+\item 
+static bool \mbox{\hyperlink{class_physics_scene_a39a1adc367c0dd6182dee7b1855d87c0}{sphere\+To\+Plane}} (\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$object1, \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$object2)
+\item 
+static bool \mbox{\hyperlink{class_physics_scene_a58c967e24d54e357afdc44a5f051aea1}{sphere\+To\+Sphere}} (\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$object1, \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$object2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::vec2 \mbox{\hyperlink{class_physics_scene_abadc3360e65a310da475fcb3a4c5ce54}{m\+\_\+gravity}}
+\item 
+float \mbox{\hyperlink{class_physics_scene_a732dc7b93711413a177ae3b5e1422184}{m\+\_\+time\+Step}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$ $>$ \mbox{\hyperlink{class_physics_scene_a978016f79254116006754b696fcccfe8}{m\+\_\+actors}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_physics_scene_a815f1460e822c52d27cdbb1c79b7d38d}\label{class_physics_scene_a815f1460e822c52d27cdbb1c79b7d38d}} 
+\index{PhysicsScene@{PhysicsScene}!PhysicsScene@{PhysicsScene}}
+\index{PhysicsScene@{PhysicsScene}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{PhysicsScene()}{PhysicsScene()}}
+{\footnotesize\ttfamily Physics\+Scene\+::\+Physics\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_physics_scene_ab51b08cdb9a551134f9a347e59709724}\label{class_physics_scene_ab51b08cdb9a551134f9a347e59709724}} 
+\index{PhysicsScene@{PhysicsScene}!````~PhysicsScene@{$\sim$PhysicsScene}}
+\index{````~PhysicsScene@{$\sim$PhysicsScene}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{$\sim$PhysicsScene()}{~PhysicsScene()}}
+{\footnotesize\ttfamily Physics\+Scene\+::$\sim$\+Physics\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_physics_scene_af6d6286c3b0ae22f0d219eb4bdd46149}\label{class_physics_scene_af6d6286c3b0ae22f0d219eb4bdd46149}} 
+\index{PhysicsScene@{PhysicsScene}!addActor@{addActor}}
+\index{addActor@{addActor}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{addActor()}{addActor()}}
+{\footnotesize\ttfamily void Physics\+Scene\+::add\+Actor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{actor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_physics_scene_a4982d433d360c115fcf46269b3c5b950}\label{class_physics_scene_a4982d433d360c115fcf46269b3c5b950}} 
+\index{PhysicsScene@{PhysicsScene}!checkForCollision@{checkForCollision}}
+\index{checkForCollision@{checkForCollision}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{checkForCollision()}{checkForCollision()}}
+{\footnotesize\ttfamily void Physics\+Scene\+::check\+For\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_physics_scene_a394f030782f5c2fcf7aaf8ed5b0a144f}\label{class_physics_scene_a394f030782f5c2fcf7aaf8ed5b0a144f}} 
+\index{PhysicsScene@{PhysicsScene}!debugScene@{debugScene}}
+\index{debugScene@{debugScene}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{debugScene()}{debugScene()}}
+{\footnotesize\ttfamily void Physics\+Scene\+::debug\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_physics_scene_a56d1377b7543080f6ccb85ec92321cd0}\label{class_physics_scene_a56d1377b7543080f6ccb85ec92321cd0}} 
+\index{PhysicsScene@{PhysicsScene}!getGravity@{getGravity}}
+\index{getGravity@{getGravity}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{getGravity()}{getGravity()}}
+{\footnotesize\ttfamily glm\+::vec2 Physics\+Scene\+::get\+Gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_physics_scene_aee0881293a2ae41305f56fac50619c5c}\label{class_physics_scene_aee0881293a2ae41305f56fac50619c5c}} 
+\index{PhysicsScene@{PhysicsScene}!getTimeStep@{getTimeStep}}
+\index{getTimeStep@{getTimeStep}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{getTimeStep()}{getTimeStep()}}
+{\footnotesize\ttfamily float Physics\+Scene\+::get\+Time\+Step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_physics_scene_af166ceecf7905a8b1648851fd60f109c}\label{class_physics_scene_af166ceecf7905a8b1648851fd60f109c}} 
+\index{PhysicsScene@{PhysicsScene}!planeToPlane@{planeToPlane}}
+\index{planeToPlane@{planeToPlane}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{planeToPlane()}{planeToPlane()}}
+{\footnotesize\ttfamily bool Physics\+Scene\+::plane\+To\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{object1,  }\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{object2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_physics_scene_af8de3a9ec46aa83c7500a56b462ec4b3}\label{class_physics_scene_af8de3a9ec46aa83c7500a56b462ec4b3}} 
+\index{PhysicsScene@{PhysicsScene}!planeToSphere@{planeToSphere}}
+\index{planeToSphere@{planeToSphere}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{planeToSphere()}{planeToSphere()}}
+{\footnotesize\ttfamily bool Physics\+Scene\+::plane\+To\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{object1,  }\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{object2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_physics_scene_a696fef09a3849c91e7d2c6e3fbd2e56e}\label{class_physics_scene_a696fef09a3849c91e7d2c6e3fbd2e56e}} 
+\index{PhysicsScene@{PhysicsScene}!removeActor@{removeActor}}
+\index{removeActor@{removeActor}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{removeActor()}{removeActor()}}
+{\footnotesize\ttfamily void Physics\+Scene\+::remove\+Actor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{actor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_physics_scene_a5c922d761eec1611f8986eead9c4251e}\label{class_physics_scene_a5c922d761eec1611f8986eead9c4251e}} 
+\index{PhysicsScene@{PhysicsScene}!setGravity@{setGravity}}
+\index{setGravity@{setGravity}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{setGravity()}{setGravity()}}
+{\footnotesize\ttfamily void Physics\+Scene\+::set\+Gravity (\begin{DoxyParamCaption}\item[{const glm\+::vec2}]{gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_physics_scene_a1a83d1c8b1ae1ace048b0a03a3807947}\label{class_physics_scene_a1a83d1c8b1ae1ace048b0a03a3807947}} 
+\index{PhysicsScene@{PhysicsScene}!setTimeStep@{setTimeStep}}
+\index{setTimeStep@{setTimeStep}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{setTimeStep()}{setTimeStep()}}
+{\footnotesize\ttfamily void Physics\+Scene\+::set\+Time\+Step (\begin{DoxyParamCaption}\item[{const float}]{time\+Step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_physics_scene_a39a1adc367c0dd6182dee7b1855d87c0}\label{class_physics_scene_a39a1adc367c0dd6182dee7b1855d87c0}} 
+\index{PhysicsScene@{PhysicsScene}!sphereToPlane@{sphereToPlane}}
+\index{sphereToPlane@{sphereToPlane}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{sphereToPlane()}{sphereToPlane()}}
+{\footnotesize\ttfamily bool Physics\+Scene\+::sphere\+To\+Plane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{object1,  }\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{object2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_physics_scene_a58c967e24d54e357afdc44a5f051aea1}\label{class_physics_scene_a58c967e24d54e357afdc44a5f051aea1}} 
+\index{PhysicsScene@{PhysicsScene}!sphereToSphere@{sphereToSphere}}
+\index{sphereToSphere@{sphereToSphere}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{sphereToSphere()}{sphereToSphere()}}
+{\footnotesize\ttfamily bool Physics\+Scene\+::sphere\+To\+Sphere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{object1,  }\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{object2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_physics_scene_a8da923a616636278a069fd4cefc76647}\label{class_physics_scene_a8da923a616636278a069fd4cefc76647}} 
+\index{PhysicsScene@{PhysicsScene}!update@{update}}
+\index{update@{update}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Physics\+Scene\+::update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_physics_scene_a37d84d276838156a03efbddaea0f676b}\label{class_physics_scene_a37d84d276838156a03efbddaea0f676b}} 
+\index{PhysicsScene@{PhysicsScene}!updateGizmos@{updateGizmos}}
+\index{updateGizmos@{updateGizmos}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{updateGizmos()}{updateGizmos()}}
+{\footnotesize\ttfamily void Physics\+Scene\+::update\+Gizmos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_physics_scene_a978016f79254116006754b696fcccfe8}\label{class_physics_scene_a978016f79254116006754b696fcccfe8}} 
+\index{PhysicsScene@{PhysicsScene}!m\_actors@{m\_actors}}
+\index{m\_actors@{m\_actors}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{m\_actors}{m\_actors}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_physics_object}{Physics\+Object}}$\ast$$>$ Physics\+Scene\+::m\+\_\+actors\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_physics_scene_abadc3360e65a310da475fcb3a4c5ce54}\label{class_physics_scene_abadc3360e65a310da475fcb3a4c5ce54}} 
+\index{PhysicsScene@{PhysicsScene}!m\_gravity@{m\_gravity}}
+\index{m\_gravity@{m\_gravity}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{m\_gravity}{m\_gravity}}
+{\footnotesize\ttfamily glm\+::vec2 Physics\+Scene\+::m\+\_\+gravity\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_physics_scene_a732dc7b93711413a177ae3b5e1422184}\label{class_physics_scene_a732dc7b93711413a177ae3b5e1422184}} 
+\index{PhysicsScene@{PhysicsScene}!m\_timeStep@{m\_timeStep}}
+\index{m\_timeStep@{m\_timeStep}!PhysicsScene@{PhysicsScene}}
+\doxysubsubsection{\texorpdfstring{m\_timeStep}{m\_timeStep}}
+{\footnotesize\ttfamily float Physics\+Scene\+::m\+\_\+time\+Step\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Physics\+Scene/\mbox{\hyperlink{_physics_scene_8h}{Physics\+Scene.\+h}}\item 
+Physics\+Scene/\mbox{\hyperlink{_physics_scene_8cpp}{Physics\+Scene.\+cpp}}\end{DoxyCompactItemize}

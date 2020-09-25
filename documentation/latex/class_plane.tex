@@ -1,0 +1,152 @@
+\hypertarget{class_plane}{}\doxysection{Plane Class Reference}
+\label{class_plane}\index{Plane@{Plane}}
+
+
+{\ttfamily \#include $<$Plane.\+h$>$}
+
+
+
+Inherits \mbox{\hyperlink{class_physics_object}{Physics\+Object}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_plane_acac0d9c003e0ab10d07b146c3566a0c7}{Plane}} ()
+\item 
+\mbox{\hyperlink{class_plane_ad942441ce40022607f5e027c9c6a14bd}{Plane}} (glm\+::vec2 normal, float distance)
+\item 
+\mbox{\hyperlink{class_plane_a69abd86051c880dcb44b249ad10c4436}{$\sim$\+Plane}} ()
+\item 
+virtual void \mbox{\hyperlink{class_plane_a5c182dc7bd835996cbaa1eec476e3b7d}{fixed\+Update}} (glm\+::vec2 gravity, float time\+Step)
+\begin{DoxyCompactList}\small\item\em used to update each object using timestep \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_plane_a86ce7f8d034c0958e6632dfe8b05cd26}{debug}} ()
+\item 
+virtual void \mbox{\hyperlink{class_plane_aa3fa5eb66f02f2b37609f7bcfca6964f}{make\+Gizmo}} ()
+\begin{DoxyCompactList}\small\item\em used to make each object \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_plane_aba7b46138ec6a9c9c802086628ff4552}{reset\+Position}} ()
+\item 
+void \mbox{\hyperlink{class_plane_ab7f191e3f6291e79db0fb94124e1e04e}{resolve\+Collision}} (\mbox{\hyperlink{class_rigid_body}{Rigid\+Body}} $\ast$other, glm\+::vec2 contact)
+\item 
+glm\+::vec2 \mbox{\hyperlink{class_plane_a939abae9f7aee50b4fa0a4908f4bc209}{get\+Normal}} ()
+\item 
+float \mbox{\hyperlink{class_plane_a3d68cb63e77f29157252a41659e6fa5b}{get\+Distance}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::vec2 \mbox{\hyperlink{class_plane_a589218a5bbd8be0d91594bdee383798e}{m\+\_\+normal}}
+\item 
+float \mbox{\hyperlink{class_plane_aa5b96cec4f43f2cb16c3b575eb9c51ad}{m\+\_\+distance\+To\+Origin}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_plane_acac0d9c003e0ab10d07b146c3566a0c7}\label{class_plane_acac0d9c003e0ab10d07b146c3566a0c7}} 
+\index{Plane@{Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{Plane()}{Plane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Plane\+::\+Plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_plane_ad942441ce40022607f5e027c9c6a14bd}\label{class_plane_ad942441ce40022607f5e027c9c6a14bd}} 
+\index{Plane@{Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{Plane()}{Plane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Plane\+::\+Plane (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{normal,  }\item[{float}]{distance }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_plane_a69abd86051c880dcb44b249ad10c4436}\label{class_plane_a69abd86051c880dcb44b249ad10c4436}} 
+\index{Plane@{Plane}!````~Plane@{$\sim$Plane}}
+\index{````~Plane@{$\sim$Plane}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{$\sim$Plane()}{~Plane()}}
+{\footnotesize\ttfamily Plane\+::$\sim$\+Plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_plane_a86ce7f8d034c0958e6632dfe8b05cd26}\label{class_plane_a86ce7f8d034c0958e6632dfe8b05cd26}} 
+\index{Plane@{Plane}!debug@{debug}}
+\index{debug@{debug}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily virtual void Plane\+::debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_physics_object_a7f960a2ede3b07394d5dc4a5beca0f4f}{Physics\+Object}}.
+
+\mbox{\Hypertarget{class_plane_a5c182dc7bd835996cbaa1eec476e3b7d}\label{class_plane_a5c182dc7bd835996cbaa1eec476e3b7d}} 
+\index{Plane@{Plane}!fixedUpdate@{fixedUpdate}}
+\index{fixedUpdate@{fixedUpdate}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{fixedUpdate()}{fixedUpdate()}}
+{\footnotesize\ttfamily virtual void Plane\+::fixed\+Update (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{gravity,  }\item[{float}]{time\+Step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+used to update each object using timestep 
+
+
+
+Implements \mbox{\hyperlink{class_physics_object_a58ea286456823d7c7dfc1221701d16f8}{Physics\+Object}}.
+
+\mbox{\Hypertarget{class_plane_a3d68cb63e77f29157252a41659e6fa5b}\label{class_plane_a3d68cb63e77f29157252a41659e6fa5b}} 
+\index{Plane@{Plane}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{getDistance()}{getDistance()}}
+{\footnotesize\ttfamily float Plane\+::get\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_plane_a939abae9f7aee50b4fa0a4908f4bc209}\label{class_plane_a939abae9f7aee50b4fa0a4908f4bc209}} 
+\index{Plane@{Plane}!getNormal@{getNormal}}
+\index{getNormal@{getNormal}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{getNormal()}{getNormal()}}
+{\footnotesize\ttfamily glm\+::vec2 Plane\+::get\+Normal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_plane_aa3fa5eb66f02f2b37609f7bcfca6964f}\label{class_plane_aa3fa5eb66f02f2b37609f7bcfca6964f}} 
+\index{Plane@{Plane}!makeGizmo@{makeGizmo}}
+\index{makeGizmo@{makeGizmo}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{makeGizmo()}{makeGizmo()}}
+{\footnotesize\ttfamily void Plane\+::make\+Gizmo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+used to make each object 
+
+
+
+Implements \mbox{\hyperlink{class_physics_object_ac1cbc181f7d9bd0a51338c164d822171}{Physics\+Object}}.
+
+\mbox{\Hypertarget{class_plane_aba7b46138ec6a9c9c802086628ff4552}\label{class_plane_aba7b46138ec6a9c9c802086628ff4552}} 
+\index{Plane@{Plane}!resetPosition@{resetPosition}}
+\index{resetPosition@{resetPosition}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{resetPosition()}{resetPosition()}}
+{\footnotesize\ttfamily virtual void Plane\+::reset\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_physics_object_ae80a0c4668a1bd03b54587235e6274e0}{Physics\+Object}}.
+
+\mbox{\Hypertarget{class_plane_ab7f191e3f6291e79db0fb94124e1e04e}\label{class_plane_ab7f191e3f6291e79db0fb94124e1e04e}} 
+\index{Plane@{Plane}!resolveCollision@{resolveCollision}}
+\index{resolveCollision@{resolveCollision}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{resolveCollision()}{resolveCollision()}}
+{\footnotesize\ttfamily void Plane\+::resolve\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rigid_body}{Rigid\+Body}} $\ast$}]{other,  }\item[{glm\+::vec2}]{contact }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_plane_aa5b96cec4f43f2cb16c3b575eb9c51ad}\label{class_plane_aa5b96cec4f43f2cb16c3b575eb9c51ad}} 
+\index{Plane@{Plane}!m\_distanceToOrigin@{m\_distanceToOrigin}}
+\index{m\_distanceToOrigin@{m\_distanceToOrigin}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{m\_distanceToOrigin}{m\_distanceToOrigin}}
+{\footnotesize\ttfamily float Plane\+::m\+\_\+distance\+To\+Origin\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_plane_a589218a5bbd8be0d91594bdee383798e}\label{class_plane_a589218a5bbd8be0d91594bdee383798e}} 
+\index{Plane@{Plane}!m\_normal@{m\_normal}}
+\index{m\_normal@{m\_normal}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{m\_normal}{m\_normal}}
+{\footnotesize\ttfamily glm\+::vec2 Plane\+::m\+\_\+normal\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Physics\+Scene/\mbox{\hyperlink{_plane_8h}{Plane.\+h}}\item 
+Physics\+Scene/\mbox{\hyperlink{_plane_8cpp}{Plane.\+cpp}}\end{DoxyCompactItemize}
