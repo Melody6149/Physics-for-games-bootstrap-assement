@@ -16,19 +16,17 @@ Inherits Application.
 virtual \mbox{\hyperlink{class_physics_scene_app_afcf98f5e9d9200fcd5ecf91dbca9358c}{$\sim$\+Physics\+Scene\+App}} ()
 \item 
 virtual bool \mbox{\hyperlink{class_physics_scene_app_acc7a4b3bb092d76145b027fdaa6e56b4}{startup}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em This runs at startup. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_physics_scene_app_a65ecba77ceb5220c8097ff2a5a4adf18}{shutdown}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em This runs at shutdown. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_physics_scene_app_a16f70b20f8fbccc0345557002162168b}{update}} (float delta\+Time)
-\item 
+\begin{DoxyCompactList}\small\item\em updates the program \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_physics_scene_app_a92b31405ac2c491c1cc26e17eb7ca87c}{draw}} ()
-\item 
-void \mbox{\hyperlink{class_physics_scene_app_a96ebb612d0aa8d473c60fd76a39e8f49}{setup\+Continuous\+Demo}} (glm\+::vec2 start\+Pos, glm\+::vec2 velocity, float gravity)
-\item 
+\begin{DoxyCompactList}\small\item\em calls functions related to drawing \end{DoxyCompactList}\item 
 glm\+::vec2 \mbox{\hyperlink{class_physics_scene_app_ab4948abd8fc8008e256cc55cdbefee93}{calculate\+Velocity}} (glm\+::vec2 initial\+Position, glm\+::vec2 final\+Position, float gravity, float time)
-\item 
+\begin{DoxyCompactList}\small\item\em Used to calculate velocity. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_physics_scene_app_a0adc14ad28136096c226829b794d4ca6}{createballs}} (glm\+::vec2 firstball\+Position, int limit)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The function used to spawn the balls. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -37,7 +35,7 @@ aie\+::\+Renderer2D $\ast$ \mbox{\hyperlink{class_physics_scene_app_aff089b51e79
 aie\+::\+Font $\ast$ \mbox{\hyperlink{class_physics_scene_app_a350e714f71198388236e0b5b6624fc65}{m\+\_\+font}}
 \item 
 \mbox{\hyperlink{class_physics_scene}{Physics\+Scene}} $\ast$ \mbox{\hyperlink{class_physics_scene_app_a231b4a612b7979c2594850d49c8f9901}{m\+\_\+physics\+Scene}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_physics_scene}{Physics\+Scene}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -62,11 +60,19 @@ aie\+::\+Font $\ast$ \mbox{\hyperlink{class_physics_scene_app_a350e714f711983882
 \doxysubsubsection{\texorpdfstring{calculateVelocity()}{calculateVelocity()}}
 {\footnotesize\ttfamily glm\+::vec2 Physics\+Scene\+App\+::calculate\+Velocity (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{initial\+Position,  }\item[{glm\+::vec2}]{final\+Position,  }\item[{float}]{gravity,  }\item[{float}]{time }\end{DoxyParamCaption})}
 
+
+
+Used to calculate velocity. 
+
 \mbox{\Hypertarget{class_physics_scene_app_a0adc14ad28136096c226829b794d4ca6}\label{class_physics_scene_app_a0adc14ad28136096c226829b794d4ca6}} 
 \index{PhysicsSceneApp@{PhysicsSceneApp}!createballs@{createballs}}
 \index{createballs@{createballs}!PhysicsSceneApp@{PhysicsSceneApp}}
 \doxysubsubsection{\texorpdfstring{createballs()}{createballs()}}
 {\footnotesize\ttfamily void Physics\+Scene\+App\+::createballs (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{firstball\+Position,  }\item[{int}]{limit }\end{DoxyParamCaption})}
+
+
+
+The function used to spawn the balls. 
 
 \mbox{\Hypertarget{class_physics_scene_app_a92b31405ac2c491c1cc26e17eb7ca87c}\label{class_physics_scene_app_a92b31405ac2c491c1cc26e17eb7ca87c}} 
 \index{PhysicsSceneApp@{PhysicsSceneApp}!draw@{draw}}
@@ -74,11 +80,9 @@ aie\+::\+Font $\ast$ \mbox{\hyperlink{class_physics_scene_app_a350e714f711983882
 \doxysubsubsection{\texorpdfstring{draw()}{draw()}}
 {\footnotesize\ttfamily void Physics\+Scene\+App\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-\mbox{\Hypertarget{class_physics_scene_app_a96ebb612d0aa8d473c60fd76a39e8f49}\label{class_physics_scene_app_a96ebb612d0aa8d473c60fd76a39e8f49}} 
-\index{PhysicsSceneApp@{PhysicsSceneApp}!setupContinuousDemo@{setupContinuousDemo}}
-\index{setupContinuousDemo@{setupContinuousDemo}!PhysicsSceneApp@{PhysicsSceneApp}}
-\doxysubsubsection{\texorpdfstring{setupContinuousDemo()}{setupContinuousDemo()}}
-{\footnotesize\ttfamily void Physics\+Scene\+App\+::setup\+Continuous\+Demo (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{start\+Pos,  }\item[{glm\+::vec2}]{velocity,  }\item[{float}]{gravity }\end{DoxyParamCaption})}
+
+
+calls functions related to drawing 
 
 \mbox{\Hypertarget{class_physics_scene_app_a65ecba77ceb5220c8097ff2a5a4adf18}\label{class_physics_scene_app_a65ecba77ceb5220c8097ff2a5a4adf18}} 
 \index{PhysicsSceneApp@{PhysicsSceneApp}!shutdown@{shutdown}}
@@ -86,17 +90,29 @@ aie\+::\+Font $\ast$ \mbox{\hyperlink{class_physics_scene_app_a350e714f711983882
 \doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
 {\footnotesize\ttfamily void Physics\+Scene\+App\+::shutdown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+This runs at shutdown. 
+
 \mbox{\Hypertarget{class_physics_scene_app_acc7a4b3bb092d76145b027fdaa6e56b4}\label{class_physics_scene_app_acc7a4b3bb092d76145b027fdaa6e56b4}} 
 \index{PhysicsSceneApp@{PhysicsSceneApp}!startup@{startup}}
 \index{startup@{startup}!PhysicsSceneApp@{PhysicsSceneApp}}
 \doxysubsubsection{\texorpdfstring{startup()}{startup()}}
 {\footnotesize\ttfamily bool Physics\+Scene\+App\+::startup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+This runs at startup. 
+
 \mbox{\Hypertarget{class_physics_scene_app_a16f70b20f8fbccc0345557002162168b}\label{class_physics_scene_app_a16f70b20f8fbccc0345557002162168b}} 
 \index{PhysicsSceneApp@{PhysicsSceneApp}!update@{update}}
 \index{update@{update}!PhysicsSceneApp@{PhysicsSceneApp}}
 \doxysubsubsection{\texorpdfstring{update()}{update()}}
 {\footnotesize\ttfamily void Physics\+Scene\+App\+::update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+updates the program 
 
 
 
@@ -118,6 +134,10 @@ aie\+::\+Font $\ast$ \mbox{\hyperlink{class_physics_scene_app_a350e714f711983882
 \index{m\_physicsScene@{m\_physicsScene}!PhysicsSceneApp@{PhysicsSceneApp}}
 \doxysubsubsection{\texorpdfstring{m\_physicsScene}{m\_physicsScene}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_physics_scene}{Physics\+Scene}}$\ast$ Physics\+Scene\+App\+::m\+\_\+physics\+Scene\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The \mbox{\hyperlink{class_physics_scene}{Physics\+Scene}}. 
 
 
 

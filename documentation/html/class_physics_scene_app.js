@@ -5,7 +5,6 @@ var class_physics_scene_app =
     [ "calculateVelocity", "class_physics_scene_app.html#ab4948abd8fc8008e256cc55cdbefee93", null ],
     [ "createballs", "class_physics_scene_app.html#a0adc14ad28136096c226829b794d4ca6", null ],
     [ "draw", "class_physics_scene_app.html#a92b31405ac2c491c1cc26e17eb7ca87c", null ],
-    [ "setupContinuousDemo", "class_physics_scene_app.html#a96ebb612d0aa8d473c60fd76a39e8f49", null ],
     [ "shutdown", "class_physics_scene_app.html#a65ecba77ceb5220c8097ff2a5a4adf18", null ],
     [ "startup", "class_physics_scene_app.html#acc7a4b3bb092d76145b027fdaa6e56b4", null ],
     [ "update", "class_physics_scene_app.html#a16f70b20f8fbccc0345557002162168b", null ],
