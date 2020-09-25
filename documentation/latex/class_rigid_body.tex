@@ -16,45 +16,45 @@ Inherited by \mbox{\hyperlink{class_sphere}{Sphere}}.
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_rigid_body_a3e3065fe0fc171d9fad623b39fef10b4}{Rigid\+Body}} (\mbox{\hyperlink{_physics_object_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\+Type}} shape\+ID, glm\+::vec2 position, glm\+::vec2 velocity, float rotation, float mass)
-\item 
+\begin{DoxyCompactList}\small\item\em virtual constructor for rigidbody \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_rigid_body_a4eade6e08e5a78c56822d2f42322c915}{$\sim$\+Rigid\+Body}} ()
 \item 
 virtual void \mbox{\hyperlink{class_rigid_body_a81f9bd84c83fa9f949202bd81777232b}{fixed\+Update}} (glm\+::vec2 gravity, float time\+Step)
-\begin{DoxyCompactList}\small\item\em used to update each object using timestep \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em updates objects \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_rigid_body_a2746e7f16edaf4db71850846d0d9ff6b}{debug}} ()
 \item 
 void \mbox{\hyperlink{class_rigid_body_a3806471fc48e1f8fcbeb82a05d801376}{apply\+Force}} (glm\+::vec2 force, glm\+::vec2 pos)
-\item 
+\begin{DoxyCompactList}\small\item\em applys a force to a object \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_rigid_body_a8a31a2cb6432ecbd32407be7efe08b41}{apply\+Force\+To\+Actor}} (\mbox{\hyperlink{class_rigid_body}{Rigid\+Body}} $\ast$actor2, glm\+::vec2 force)
-\item 
+\begin{DoxyCompactList}\small\item\em applys a force to a actor \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{class_rigid_body_a138102b728bb6556c8cb48b0df91e75f}{check\+Collision}} (\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$other)=0
-\item 
+\begin{DoxyCompactList}\small\item\em checks for collision \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_rigid_body_ac17eddaa376abc65cce2d99b48e1b825}{resolve\+Collision}} (\mbox{\hyperlink{class_rigid_body}{Rigid\+Body}} $\ast$actor2, glm\+::vec2 contact, glm\+::vec2 $\ast$collision\+Normal=nullptr)
-\item 
+\begin{DoxyCompactList}\small\item\em resoves collision \end{DoxyCompactList}\item 
 glm\+::vec2 \mbox{\hyperlink{class_rigid_body_ac81ad46498ce52fe78fe0c0ff8d005ae}{get\+Position}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em returns the position \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_rigid_body_a26a3406edd9c66ab8a157c6e1b69838b}{get\+Rotation}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em returns the rotation \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_rigid_body_aa08fdf3b610dffec6c1cfbc526fa6e62}{get\+Moment}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em returns momentem \end{DoxyCompactList}\item 
 glm\+::vec2 \mbox{\hyperlink{class_rigid_body_af562e3182947cd437079381a00d7f6c2}{getvelocity}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em returns velocity \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_rigid_body_a33da481fee67e638681fe5fec3fb099a}{get\+Mass}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em returns mass \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_rigid_body_ad4e22f61906697c61507a69b9d26d3de}{get\+Angular\+Velocity}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em retuns angular velocity \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_rigid_body_a5e46399d50aa3a0e7dba79fbf626c1fd}{get\+Linear\+Drag}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em returns linear\+Drag \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_rigid_body_a10c5a62b586b704eaaf8305c48aee920}{set\+Linear\+Drag}} (float value)
-\item 
+\begin{DoxyCompactList}\small\item\em sets linear drag \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_rigid_body_ad249abe5d52222c6d7da1cb96861ab44}{get\+Angular\+Drag}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em returns angular drag \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_rigid_body_a02d95b922a83a4bfb515c29eb1739816}{set\+Angular\+Drag}} (float value)
-\item 
+\begin{DoxyCompactList}\small\item\em sets angulardrag \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_rigid_body_ab97e60557af5ff8b56e15f911d8ef6a9}{get\+Elasticity}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em returns elasticity \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_rigid_body_a6a2cc95dee2e360b1c559fd45d00c357}{set\+Elasticity}} (float value)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em sets elasticity \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -86,6 +86,10 @@ float \mbox{\hyperlink{class_rigid_body_a62f3cb638fb989585996a3134f2f59c8}{m\+\_
 \doxysubsubsection{\texorpdfstring{RigidBody()}{RigidBody()}}
 {\footnotesize\ttfamily Rigid\+Body\+::\+Rigid\+Body (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_physics_object_8h_a5a4538eeab397888d88a4eefcc5a1345}{Shape\+Type}}}]{shape\+ID,  }\item[{glm\+::vec2}]{position,  }\item[{glm\+::vec2}]{velocity,  }\item[{float}]{rotation,  }\item[{float}]{mass }\end{DoxyParamCaption})}
 
+
+
+virtual constructor for rigidbody 
+
 \mbox{\Hypertarget{class_rigid_body_a4eade6e08e5a78c56822d2f42322c915}\label{class_rigid_body_a4eade6e08e5a78c56822d2f42322c915}} 
 \index{RigidBody@{RigidBody}!````~RigidBody@{$\sim$RigidBody}}
 \index{````~RigidBody@{$\sim$RigidBody}!RigidBody@{RigidBody}}
@@ -101,17 +105,29 @@ float \mbox{\hyperlink{class_rigid_body_a62f3cb638fb989585996a3134f2f59c8}{m\+\_
 \doxysubsubsection{\texorpdfstring{applyForce()}{applyForce()}}
 {\footnotesize\ttfamily void Rigid\+Body\+::apply\+Force (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{force,  }\item[{glm\+::vec2}]{pos }\end{DoxyParamCaption})}
 
+
+
+applys a force to a object 
+
 \mbox{\Hypertarget{class_rigid_body_a8a31a2cb6432ecbd32407be7efe08b41}\label{class_rigid_body_a8a31a2cb6432ecbd32407be7efe08b41}} 
 \index{RigidBody@{RigidBody}!applyForceToActor@{applyForceToActor}}
 \index{applyForceToActor@{applyForceToActor}!RigidBody@{RigidBody}}
 \doxysubsubsection{\texorpdfstring{applyForceToActor()}{applyForceToActor()}}
 {\footnotesize\ttfamily void Rigid\+Body\+::apply\+Force\+To\+Actor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rigid_body}{Rigid\+Body}} $\ast$}]{actor2,  }\item[{glm\+::vec2}]{force }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+applys a force to a actor 
+
 \mbox{\Hypertarget{class_rigid_body_a138102b728bb6556c8cb48b0df91e75f}\label{class_rigid_body_a138102b728bb6556c8cb48b0df91e75f}} 
 \index{RigidBody@{RigidBody}!checkCollision@{checkCollision}}
 \index{checkCollision@{checkCollision}!RigidBody@{RigidBody}}
 \doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
 {\footnotesize\ttfamily virtual bool Rigid\+Body\+::check\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+checks for collision 
 
 
 
@@ -135,7 +151,7 @@ Implements \mbox{\hyperlink{class_physics_object_a7f960a2ede3b07394d5dc4a5beca0f
 
 
 
-used to update each object using timestep 
+updates objects 
 
 
 
@@ -147,11 +163,19 @@ Implements \mbox{\hyperlink{class_physics_object_a58ea286456823d7c7dfc1221701d16
 \doxysubsubsection{\texorpdfstring{getAngularDrag()}{getAngularDrag()}}
 {\footnotesize\ttfamily float Rigid\+Body\+::get\+Angular\+Drag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+returns angular drag 
+
 \mbox{\Hypertarget{class_rigid_body_ad4e22f61906697c61507a69b9d26d3de}\label{class_rigid_body_ad4e22f61906697c61507a69b9d26d3de}} 
 \index{RigidBody@{RigidBody}!getAngularVelocity@{getAngularVelocity}}
 \index{getAngularVelocity@{getAngularVelocity}!RigidBody@{RigidBody}}
 \doxysubsubsection{\texorpdfstring{getAngularVelocity()}{getAngularVelocity()}}
 {\footnotesize\ttfamily float Rigid\+Body\+::get\+Angular\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+retuns angular velocity 
 
 \mbox{\Hypertarget{class_rigid_body_ab97e60557af5ff8b56e15f911d8ef6a9}\label{class_rigid_body_ab97e60557af5ff8b56e15f911d8ef6a9}} 
 \index{RigidBody@{RigidBody}!getElasticity@{getElasticity}}
@@ -159,11 +183,19 @@ Implements \mbox{\hyperlink{class_physics_object_a58ea286456823d7c7dfc1221701d16
 \doxysubsubsection{\texorpdfstring{getElasticity()}{getElasticity()}}
 {\footnotesize\ttfamily float Rigid\+Body\+::get\+Elasticity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+returns elasticity 
+
 \mbox{\Hypertarget{class_rigid_body_a5e46399d50aa3a0e7dba79fbf626c1fd}\label{class_rigid_body_a5e46399d50aa3a0e7dba79fbf626c1fd}} 
 \index{RigidBody@{RigidBody}!getLinearDrag@{getLinearDrag}}
 \index{getLinearDrag@{getLinearDrag}!RigidBody@{RigidBody}}
 \doxysubsubsection{\texorpdfstring{getLinearDrag()}{getLinearDrag()}}
 {\footnotesize\ttfamily float Rigid\+Body\+::get\+Linear\+Drag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns linear\+Drag 
 
 \mbox{\Hypertarget{class_rigid_body_a33da481fee67e638681fe5fec3fb099a}\label{class_rigid_body_a33da481fee67e638681fe5fec3fb099a}} 
 \index{RigidBody@{RigidBody}!getMass@{getMass}}
@@ -171,11 +203,19 @@ Implements \mbox{\hyperlink{class_physics_object_a58ea286456823d7c7dfc1221701d16
 \doxysubsubsection{\texorpdfstring{getMass()}{getMass()}}
 {\footnotesize\ttfamily float Rigid\+Body\+::get\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+returns mass 
+
 \mbox{\Hypertarget{class_rigid_body_aa08fdf3b610dffec6c1cfbc526fa6e62}\label{class_rigid_body_aa08fdf3b610dffec6c1cfbc526fa6e62}} 
 \index{RigidBody@{RigidBody}!getMoment@{getMoment}}
 \index{getMoment@{getMoment}!RigidBody@{RigidBody}}
 \doxysubsubsection{\texorpdfstring{getMoment()}{getMoment()}}
 {\footnotesize\ttfamily float Rigid\+Body\+::get\+Moment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns momentem 
 
 \mbox{\Hypertarget{class_rigid_body_ac81ad46498ce52fe78fe0c0ff8d005ae}\label{class_rigid_body_ac81ad46498ce52fe78fe0c0ff8d005ae}} 
 \index{RigidBody@{RigidBody}!getPosition@{getPosition}}
@@ -183,11 +223,19 @@ Implements \mbox{\hyperlink{class_physics_object_a58ea286456823d7c7dfc1221701d16
 \doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
 {\footnotesize\ttfamily glm\+::vec2 Rigid\+Body\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+returns the position 
+
 \mbox{\Hypertarget{class_rigid_body_a26a3406edd9c66ab8a157c6e1b69838b}\label{class_rigid_body_a26a3406edd9c66ab8a157c6e1b69838b}} 
 \index{RigidBody@{RigidBody}!getRotation@{getRotation}}
 \index{getRotation@{getRotation}!RigidBody@{RigidBody}}
 \doxysubsubsection{\texorpdfstring{getRotation()}{getRotation()}}
 {\footnotesize\ttfamily float Rigid\+Body\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns the rotation 
 
 \mbox{\Hypertarget{class_rigid_body_af562e3182947cd437079381a00d7f6c2}\label{class_rigid_body_af562e3182947cd437079381a00d7f6c2}} 
 \index{RigidBody@{RigidBody}!getvelocity@{getvelocity}}
@@ -195,11 +243,19 @@ Implements \mbox{\hyperlink{class_physics_object_a58ea286456823d7c7dfc1221701d16
 \doxysubsubsection{\texorpdfstring{getvelocity()}{getvelocity()}}
 {\footnotesize\ttfamily glm\+::vec2 Rigid\+Body\+::getvelocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+returns velocity 
+
 \mbox{\Hypertarget{class_rigid_body_ac17eddaa376abc65cce2d99b48e1b825}\label{class_rigid_body_ac17eddaa376abc65cce2d99b48e1b825}} 
 \index{RigidBody@{RigidBody}!resolveCollision@{resolveCollision}}
 \index{resolveCollision@{resolveCollision}!RigidBody@{RigidBody}}
 \doxysubsubsection{\texorpdfstring{resolveCollision()}{resolveCollision()}}
 {\footnotesize\ttfamily void Rigid\+Body\+::resolve\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rigid_body}{Rigid\+Body}} $\ast$}]{actor2,  }\item[{glm\+::vec2}]{contact,  }\item[{glm\+::vec2 $\ast$}]{collision\+Normal = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+resoves collision 
 
 \mbox{\Hypertarget{class_rigid_body_a02d95b922a83a4bfb515c29eb1739816}\label{class_rigid_body_a02d95b922a83a4bfb515c29eb1739816}} 
 \index{RigidBody@{RigidBody}!setAngularDrag@{setAngularDrag}}
@@ -207,17 +263,29 @@ Implements \mbox{\hyperlink{class_physics_object_a58ea286456823d7c7dfc1221701d16
 \doxysubsubsection{\texorpdfstring{setAngularDrag()}{setAngularDrag()}}
 {\footnotesize\ttfamily void Rigid\+Body\+::set\+Angular\+Drag (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+sets angulardrag 
+
 \mbox{\Hypertarget{class_rigid_body_a6a2cc95dee2e360b1c559fd45d00c357}\label{class_rigid_body_a6a2cc95dee2e360b1c559fd45d00c357}} 
 \index{RigidBody@{RigidBody}!setElasticity@{setElasticity}}
 \index{setElasticity@{setElasticity}!RigidBody@{RigidBody}}
 \doxysubsubsection{\texorpdfstring{setElasticity()}{setElasticity()}}
 {\footnotesize\ttfamily void Rigid\+Body\+::set\+Elasticity (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+sets elasticity 
+
 \mbox{\Hypertarget{class_rigid_body_a10c5a62b586b704eaaf8305c48aee920}\label{class_rigid_body_a10c5a62b586b704eaaf8305c48aee920}} 
 \index{RigidBody@{RigidBody}!setLinearDrag@{setLinearDrag}}
 \index{setLinearDrag@{setLinearDrag}!RigidBody@{RigidBody}}
 \doxysubsubsection{\texorpdfstring{setLinearDrag()}{setLinearDrag()}}
 {\footnotesize\ttfamily void Rigid\+Body\+::set\+Linear\+Drag (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sets linear drag 
 
 
 

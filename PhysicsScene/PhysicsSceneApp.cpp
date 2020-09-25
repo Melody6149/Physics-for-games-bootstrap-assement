@@ -30,7 +30,7 @@ bool PhysicsSceneApp::startup() {
 
 	glm::vec2 firstSpherePosition = glm::vec2(0.0f, 0.0f);
 	
-	Sphere* sphere = new Sphere(glm::vec2(-50.0f, 0.0f), glm::vec2(1000.0f, 0.0f), 1.0f, 3.0f, glm::vec4(1.0f, 0.0f, 0.0f, 1.0f));
+	Sphere* sphere = new Sphere(glm::vec2(-50.0f, 0.0f), glm::vec2(100.0f, 0.0f), 1.0f, 3.0f, glm::vec4(1.0f, 0.0f, 0.0f, 1.0f));
 	
 	m_physicsScene = new PhysicsScene();
 	m_physicsScene->addActor(sphere);

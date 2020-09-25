@@ -2,6 +2,11 @@
 \label{class_sphere}\index{Sphere@{Sphere}}
 
 
+Class that contains functions for spheres.  
+
+
+
+
 {\ttfamily \#include $<$Sphere.\+h$>$}
 
 
@@ -12,17 +17,17 @@ Inherits \mbox{\hyperlink{class_rigid_body}{Rigid\+Body}}.
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_sphere_a67a9835d0bef74da2c8c3df69d79596d}{Sphere}} (glm\+::vec2 position, glm\+::vec2 velocity, float mass, float radius, glm\+::vec4 colour)
-\item 
+\begin{DoxyCompactList}\small\item\em constructor for spheres \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_sphere_a569c071e50a3e11f678630ee1a17737e}{$\sim$\+Sphere}} ()
 \item 
 virtual void \mbox{\hyperlink{class_sphere_a72c80a8576b0a54513479f51570dabeb}{make\+Gizmo}} ()
-\begin{DoxyCompactList}\small\item\em used to make each object \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em makes a gizmo for the sphere \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{class_sphere_a03b2b9c2c71cf51dc4fcfc4fc2978122}{check\+Collision}} (\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$other)
-\item 
+\begin{DoxyCompactList}\small\item\em checks for collision \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_sphere_a330dd34c7c7b6dfff106c4c71ec80028}{get\+Radius}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em gets the radius \end{DoxyCompactList}\item 
 glm\+::vec4 \mbox{\hyperlink{class_sphere_a3b50ac5fc94a9aaea99b93ea8f2961d8}{get\+Colour}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em gets the collour \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -33,12 +38,19 @@ glm\+::vec4 \mbox{\hyperlink{class_sphere_aca3c6c348856bfe747dbc47eb0cc797a}{m\+
 \doxysubsection*{Additional Inherited Members}
 
 
+\doxysubsection{Detailed Description}
+Class that contains functions for spheres. 
+
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_sphere_a67a9835d0bef74da2c8c3df69d79596d}\label{class_sphere_a67a9835d0bef74da2c8c3df69d79596d}} 
 \index{Sphere@{Sphere}!Sphere@{Sphere}}
 \index{Sphere@{Sphere}!Sphere@{Sphere}}
 \doxysubsubsection{\texorpdfstring{Sphere()}{Sphere()}}
 {\footnotesize\ttfamily Sphere\+::\+Sphere (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{position,  }\item[{glm\+::vec2}]{velocity,  }\item[{float}]{mass,  }\item[{float}]{radius,  }\item[{glm\+::vec4}]{colour }\end{DoxyParamCaption})}
+
+
+
+constructor for spheres 
 
 \mbox{\Hypertarget{class_sphere_a569c071e50a3e11f678630ee1a17737e}\label{class_sphere_a569c071e50a3e11f678630ee1a17737e}} 
 \index{Sphere@{Sphere}!````~Sphere@{$\sim$Sphere}}
@@ -57,6 +69,10 @@ glm\+::vec4 \mbox{\hyperlink{class_sphere_aca3c6c348856bfe747dbc47eb0cc797a}{m\+
 
 
 
+checks for collision 
+
+
+
 Implements \mbox{\hyperlink{class_rigid_body_a138102b728bb6556c8cb48b0df91e75f}{Rigid\+Body}}.
 
 \mbox{\Hypertarget{class_sphere_a3b50ac5fc94a9aaea99b93ea8f2961d8}\label{class_sphere_a3b50ac5fc94a9aaea99b93ea8f2961d8}} 
@@ -65,11 +81,19 @@ Implements \mbox{\hyperlink{class_rigid_body_a138102b728bb6556c8cb48b0df91e75f}{
 \doxysubsubsection{\texorpdfstring{getColour()}{getColour()}}
 {\footnotesize\ttfamily glm\+::vec4 Sphere\+::get\+Colour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+gets the collour 
+
 \mbox{\Hypertarget{class_sphere_a330dd34c7c7b6dfff106c4c71ec80028}\label{class_sphere_a330dd34c7c7b6dfff106c4c71ec80028}} 
 \index{Sphere@{Sphere}!getRadius@{getRadius}}
 \index{getRadius@{getRadius}!Sphere@{Sphere}}
 \doxysubsubsection{\texorpdfstring{getRadius()}{getRadius()}}
 {\footnotesize\ttfamily float Sphere\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets the radius 
 
 \mbox{\Hypertarget{class_sphere_a72c80a8576b0a54513479f51570dabeb}\label{class_sphere_a72c80a8576b0a54513479f51570dabeb}} 
 \index{Sphere@{Sphere}!makeGizmo@{makeGizmo}}
@@ -79,7 +103,7 @@ Implements \mbox{\hyperlink{class_rigid_body_a138102b728bb6556c8cb48b0df91e75f}{
 
 
 
-used to make each object 
+makes a gizmo for the sphere 
 
 
 
